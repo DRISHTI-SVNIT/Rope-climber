@@ -13,6 +13,7 @@ A robot that can travel through the terrains where wheeled mobility is hard. It 
 * Controls - 
 
 a - Direction 1
+
 d - Direction 2
 
 ## Troubleshooting
