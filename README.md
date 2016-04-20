@@ -19,7 +19,7 @@ d - Direction 2
 ## Troubleshooting
 ### XBee
 * Yellow light is not lit - 
-1. Get XBee closer to the robot. (Range problem)
-2. Check RX TX connections.
-3. Restart the robot.
-4. Plug in the XBee again in the PC.
+  1. Get XBee closer to the robot. (Range problem)
+  2. Check RX TX connections.
+  3. Restart the robot.
+  4. Plug in the XBee again in the PC.
