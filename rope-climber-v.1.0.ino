@@ -84,16 +84,12 @@ void manualMode() {
 
 void checkBatteryLevel(void) {
     /*Calculate battery voltage level and transmit*/
-    int a = calcVoltage();
-    while(a>0) {
-      Serial.write(a%10+48);
-      a/=10;
-    }
-    Serial.write("\r");
+    int a = calcVoltage()*100;
+    Serial.println(a);
 }
 
 void setup() {
-  Serial.begin(38400);
+  Serial.begin(57600);
   pinMode(pwmPin, OUTPUT);
   pinMode(motorDir1, OUTPUT);
   pinMode(motorDir2, OUTPUT);  
@@ -137,3 +133,4 @@ void loop() {
 ISR(TIMER1_OVF_vect) {
      checkBatteryLevel();
 }
+
